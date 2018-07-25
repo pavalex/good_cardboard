@@ -1,0 +1,167 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ff9d00;
+  color: #fff;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #ffa71a;
+  cursor: pointer;
+}
+.button img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.button-big {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+.header {
+  padding: 15px 0;
+}
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-contacts__phone {
+  font-size: 22px;
+  margin-right: 13px;
+  font-weight: 500;
+}
+.header-contacts__phone:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding-right: 13px;
+}
+.header-contacts__phone a {
+  text-decoration: none;
+  color: #373737;
+}
+
+.main {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  background: #373737 url(../img/main/main-bg.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  z-index: 2;
+}
+.main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.main-img {
+  position: relative;
+  /* ╨а╨╛╤Б╤В╨╡╤Б╤В */
+}
+.main-img::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 390px;
+  height: 390px;
+  left: 50%;
+  margin-left: -195px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.main-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+  left: 80px;
+  bottom: -21px;
+  background: url(../img/main/rostest.png) center no-repeat;
+}
+.main-text__title {
+  font-size: 41px;
+  line-height: 42px;
+  font-weight: 700;
+}
+.main-text__subtitle {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.main-text__form {
+  max-width: 535px;
+  padding: 30px 27px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+.main .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .form-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.main .form-title__important {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main .form-title__input {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 18px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+.main .form-small {
+  display: block;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}

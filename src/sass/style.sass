@@ -1,0 +1,41 @@
+@import 'variables'
+
+body 
+  font-family: 'Roboto', sans-serif
+
+.button
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  font-weight: 500
+  background-color: $active-color
+  color: $text-color-light
+  border: none  
+  padding: 13px 22px
+  border-radius: 5px
+  &:hover 
+    background-color: lighten($active-color, 5)
+    cursor: pointer
+  img
+    vertical-align: middle
+    margin-right: 5px
+  &-big 
+    padding-top: 12px
+    padding-bottom: 12px
+    vertical-align: middle
+
+img 
+  max-width: 100%
+
+input, button 
+  &:focus
+    outline: none
+
+@import 'header'
+@import 'main'
+
+
+// Media
+// @media (min-width: 1200px)
+//   .container 
+//     max-width: 968px
+
