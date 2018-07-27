@@ -1,3 +1,308 @@
-// @media (min-width: 1200px)
-//   .container 
-//     max-width: 968px
+@media (min-width: 1200px)
+  .container 
+    max-width: 968px
+
+@media (max-width: 575.98px)
+  .hidden-mobile 
+    display: none
+  // header
+  .header 
+    &-link 
+      &__burger 
+        display: block
+    &-logo 
+      background: $active-color url(../img/header/header-logo-mobile.png) center no-repeat      
+      width: 36px
+      height: 35px
+      border-radius: 4px
+    &-contacts 
+      &__phones 
+        flex-direction: column
+      &__phone
+        font-size: 14px
+        font-weight: 400
+        line-height: 17px
+        margin: 0
+        &:first-child
+          border: none
+        &-mobile 
+          font-weight: 900
+      &__button 
+        padding: 5px
+        margin: 0
+        img 
+          // width: 13px
+          margin: 0 
+  // main 
+  .main 
+    padding-top: 50px
+    padding-bottom: 58px
+    &-text      
+      text-align: center
+      &__title 
+        font-size: 22px
+        line-height: 24px
+        color: $active-color
+      &__subtitle 
+        font-size: 18px
+        margin-bottom: 40px
+      &__form 
+        background-color: transparent
+        padding: 0
+    .form
+      display: block
+      &-title 
+        font-size: 15px
+        line-height: 18px
+        &__important
+          display: inline-block
+          margin-top: 14px
+        &__input 
+          display: block
+          width: 100%
+          padding: 14px
+          text-align: center
+          margin-bottom: 13px
+      &-small 
+        font-size: 13px
+        line-height: 30px
+        margin: 0
+        margin-top: 10px
+    .button 
+      &-big 
+        padding: 15px 33px
+  // popup 
+  .popup 
+    width: 250px
+    &-title 
+      font-size: 18px
+    &-form       
+      padding: 0
+      margin-top: 30px
+      &__header
+        font-size: 24px
+        line-height: 22px
+        span 
+          display: none
+      &__label 
+        font-size: 16px
+      &__enter 
+        display: flex 
+        flex-direction: column
+        align-items: center
+        margin-top: 17px
+      &__input 
+        width: 200px
+        margin-bottom: 15px
+        padding: 0
+        text-align: center
+      &__btn
+        width: 200px
+        height: 56px
+        margin: 0
+
+@media (min-width: 576px) and (max-width: 767.98px)
+  .hidden-mobile 
+    display: none
+  // header
+  .header 
+    &-link 
+      &__burger 
+        display: block
+    &-logo 
+      background: $active-color url(../img/header/header-logo-mobile.png) center no-repeat      
+      width: 36px
+      height: 35px
+      border-radius: 4px
+    &-contacts 
+      &__phones 
+        flex-direction: column
+      &__phone
+        font-size: 16px
+        font-weight: 400
+        line-height: 17px
+        margin: 0
+        &:first-child
+          border: none
+        &-mobile 
+          font-weight: 900
+      &__button 
+        padding: 5px
+        margin: 0
+        img 
+          // width: 13px
+          margin: 0 
+  // main 
+  .main 
+    padding-top: 50px
+    padding-bottom: 58px
+    &-text      
+      text-align: center
+      &__title 
+        font-size: 26px
+        line-height: 24px
+        color: $active-color
+      &__subtitle 
+        font-size: 20px
+        margin-bottom: 40px
+      &__form 
+        background-color: transparent
+        padding: 0
+    .form
+      display: block
+      &-title 
+        font-size: 17px
+        line-height: 18px
+        &__important
+          display: inline-block
+          margin-top: 14px
+        &__input 
+          display: block
+          width: 70%
+          margin: 0 auto
+          padding: 14px
+          text-align: center
+          margin-bottom: 13px
+      &-small 
+        font-size: 14px
+        line-height: 30px
+        margin: 0
+        margin-top: 10px
+    .button 
+      &-big 
+        padding: 15px 33px
+  // popup 
+  .popup 
+    width: 350px
+    &-title 
+      font-size: 20px
+    &-form       
+      padding: 0
+      margin-top: 30px
+      &__header
+        font-size: 25px
+        line-height: 22px
+        span 
+          display: none
+      &__label 
+        font-size: 18px
+      &__enter 
+        display: flex 
+        flex-direction: column
+        align-items: center
+        margin-top: 17px
+      &__input 
+        width: 200px
+        margin-bottom: 15px
+        padding: 0
+        text-align: center
+      &__btn
+        width: 200px
+        height: 56px
+        margin: 0
+
+@media (min-width: 768px) and (max-width: 991.98px)
+  .hidden-mobile 
+    display: none
+  // header
+  .header 
+    &-link 
+      &__burger 
+        display: block
+    &-logo 
+      background: $active-color url(../img/header/header-logo-mobile.png) center no-repeat      
+      width: 36px
+      height: 35px
+      border-radius: 4px
+    &-contacts 
+      &__phones 
+        // flex-direction: column
+      &__phone
+        font-size: 18px
+        margin-right: 13px
+        font-weight: 500
+        margin: 0
+        margin-right: 13px
+        &:first-child
+          border-right: 1px solid rgba(0, 0, 0, 0.2)
+          padding-right: 13px
+        &-mobile 
+          font-weight: 400
+      &__button 
+        padding: 7px 20px
+        margin: 0
+        img 
+          // width: 13px
+          margin: 0 
+  // main 
+  .main 
+    padding-top: 50px
+    padding-bottom: 58px
+    &-text    
+      text-align: center
+      &__title 
+        font-size: 28px
+        line-height: 24px
+        color: $active-color
+      &__subtitle 
+        font-size: 22px
+        margin-bottom: 40px
+      &__form 
+        margin: 0 auto
+        background-color: transparent
+        padding: 0
+    .form
+      display: flex
+      justify-content: space-between
+      margin-top: 40px
+      &-title 
+        font-size: 18px
+        line-height: 18px
+        &__important
+          display: inline-block
+          margin-top: 14px
+        &__input
+          flex-basis: 65%          
+      &-small 
+        font-size: 15px
+        line-height: 30px
+        margin: 0
+        margin-top: 10px
+    .button 
+      &-big 
+        padding: 0 15px
+        vertical-align: middle
+  // popup 
+  .popup 
+    width: 500px
+    &-title 
+      font-size: 24px
+    &-form       
+      padding: 0
+      margin-top: 30px
+      &__header
+        font-size: 25px
+        line-height: 22px
+        span 
+          font-size: 20px
+      &__label 
+        font-size: 18px
+      &__enter 
+        display: flex 
+        justify-content: space-around
+        // flex-direction: column
+        // align-items: center
+        // margin-top: 17px
+      &__input 
+        width: 250px
+        // margin-bottom: 15px
+        // padding: 0
+        // text-align: center
+      &__btn
+        width: 170px
+        height: 56px
+        margin: 0
+
+          
+
+  

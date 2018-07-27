@@ -15,24 +15,35 @@
   <header class="header">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-4">
-          <div class="header-logo">
-            <a href="/">
-              <img src="img/header/header-logo.png" alt="Добрый картон">
+        <div class="col-4 col-md-4">
+          <div class="header-group">
+            <a href="#" class="header-link">
+              <span class="header-link__burger"></span>
             </a>
+            <a href="/">
+              <div class="header-logo">
+              </div>
+          </a>
           </div>
         </div>
         <!-- /.col-4 -->
-        <div class="col-8">
+        <div class="col-8 col-md-8">
           <div class="header-contacts">
-            <div class="header-contacts__phone">
-              <a href="tel:83472715428">8 (347) 271-54-28</a>
-            </div>
-            <div class="header-contacts__phone">
-              <a href="tel:89373633000">8 (937) 363-30-00</a>
+            <div class="header-contacts__phones">
+              <div class="header-contacts__phone">
+                <a href="tel:83472715428">8 (347)
+                  <span class="header-contacts__phone-mobile">271-54-28</span>
+                </a>
+              </div>
+              <div class="header-contacts__phone">
+                <a href="tel:89373633000">8 (937)
+                  <span class="header-contacts__phone-mobile">363-30-00</span>
+                </a>
+              </div>
             </div>
             <button class="header-contacts__button button">
-              <img src="img/header/icon-phone.png" alt="Телефон"> Заказать звонок
+              <img src="img/header/icon-phone.png" alt="Телефон">
+              <span class="hidden-mobile">Заказать звонок</span>
             </button>
           </div>
         </div>
@@ -47,13 +58,13 @@
   <section class="main">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-5">
-          <div class="main-img">
+        <div class="col-12 col-lg-5">
+          <div class="main-img hidden-mobile">
             <img src="img/main/main-img.png" alt="Картон">
           </div>
         </div>
         <!-- /.col-5 -->
-        <div class="col-7">
+        <div class="col-12 col-lg-7">
           <div class="main-text">
             <h1 class="main-text__title">Производство упаковки из гофрокартона</h1>
             <div class="main-text__subtitle">с доставкой по всей России</div>
@@ -98,7 +109,7 @@
               Введите ваш номер телефона
             </label>
             <div class="popup-form__enter">
-              <input type="tel" name="phone" class="popup-form__input" placeholder="7 (ХХХ) ХХХ-ХХ-ХХ"  required>
+              <input type="tel" name="phone" class="popup-form__input" placeholder="7 (ХХХ) ХХХ-ХХ-ХХ" required>
               <button class="button popup-form__btn">Оставить заявку!</button>
             </div>
             <div class="popup-form__note">*Минимальный заказ 500шт</div>
@@ -115,7 +126,7 @@
   <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   </script>
-  <script src="js/main.js"></script>   
+  <script src="js/main.js"></script>
 </body>
 
 </html>

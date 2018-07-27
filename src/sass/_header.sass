@@ -1,10 +1,41 @@
 .header
   padding: 15px 0
+  &-logo 
+    background: url(../img/header/header-logo.png) center no-repeat
+    background-size: 100%
+    width: 192px
+    height: 61px  
+  &-group 
+    display: flex
+    align-items: center
+  &-link
+    margin-right: 13px
+    &__burger
+      display: none
+      height: 3px
+      width: 23px
+      background-color: $text-color-dark
+      &:before
+        content: ''
+        position: absolute
+        height: 3px
+        width: 23px
+        background-color: $text-color-dark
+        margin-top: -8px
+      &:after
+        content: ''
+        position: absolute
+        height: 3px
+        width: 23px
+        background-color: $text-color-dark
+        margin-top: 8px
   &-contacts
     display: flex
     justify-content: flex-end
     align-items: center
-    &__phone
+    &__phones 
+      display: flex
+    &__phone      
       font-size: 22px
       margin-right: 13px
       font-weight: 500
@@ -14,3 +45,5 @@
       a 
         text-decoration: none
         color: $text-color-dark
+    &__button 
+      margin-left: 14px
