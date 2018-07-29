@@ -204,6 +204,9 @@ input:focus, button:focus {
       flex-basis: 65%;
   padding: 7px 20px;
 }
+.main .form-title__btn {
+  padding: 0 18px;
+}
 .main .form-small {
   display: block;
   margin: 0;
