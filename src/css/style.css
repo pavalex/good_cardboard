@@ -5,9 +5,10 @@ body {
 
 .button {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 500;
+  padding: 12px 18px;
   background-color: #ff9d00;
   color: #fff;
   border: none;
@@ -22,12 +23,16 @@ body {
   vertical-align: middle;
   margin-right: 5px;
 }
+.button-lg {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
 
 .input {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
-  line-height: 42px;
+  line-height: 20px;
   color: #373737;
   border: none;
   border-radius: 5px;
@@ -90,10 +95,6 @@ input:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.header-contacts__button {
-  padding: 12px 19px;
-  font-size: 14px;
 }
 .header-contacts__phones {
   display: -webkit-box;
@@ -203,9 +204,6 @@ input:focus, button:focus {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
   padding: 7px 20px;
-}
-.main .form-title__btn {
-  padding: 0 18px;
 }
 .main .form-small {
   display: block;
@@ -373,6 +371,9 @@ input:focus, button:focus {
     font-size: 15px;
     line-height: 18px;
   }
+  .main .form-title__btn {
+    padding: 15px 33px;
+  }
   .main .form-title__important {
     display: inline-block;
     margin-top: 14px;
@@ -389,9 +390,6 @@ input:focus, button:focus {
     line-height: 30px;
     margin: 0;
     margin-top: 10px;
-  }
-  .main .button-big {
-    padding: 15px 33px;
   }
 
   .popup {
@@ -506,6 +504,9 @@ input:focus, button:focus {
     font-size: 17px;
     line-height: 18px;
   }
+  .main .form-title__btn {
+    padding: 15px 33px;
+  }
   .main .form-title__important {
     display: inline-block;
     margin-top: 14px;
@@ -523,9 +524,6 @@ input:focus, button:focus {
     line-height: 30px;
     margin: 0;
     margin-top: 10px;
-  }
-  .main .button-big {
-    padding: 15px 33px;
   }
 
   .popup {
@@ -656,10 +654,6 @@ input:focus, button:focus {
     line-height: 30px;
     margin: 0;
     margin-top: 10px;
-  }
-  .main .button-big {
-    padding: 0 15px;
-    vertical-align: middle;
   }
 
   .popup {
