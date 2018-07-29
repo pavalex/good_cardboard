@@ -33,6 +33,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+  padding: 18px;
   color: #373737;
   border: none;
   border-radius: 5px;
@@ -285,7 +286,6 @@ input:focus, button:focus {
 }
 .popup-form__input {
   width: 365px;
-  padding-left: 18px;
 }
 .popup-form__btn {
   width: 180px;
@@ -309,6 +309,9 @@ input:focus, button:focus {
     display: none;
   }
 
+  .header {
+    background-color: #f4f4f4;
+  }
   .header-link__burger {
     display: block;
   }
@@ -341,6 +344,7 @@ input:focus, button:focus {
     margin: 0;
   }
   .header-contacts__button img {
+    width: 75%;
     margin: 0;
   }
 
@@ -397,6 +401,7 @@ input:focus, button:focus {
   }
   .popup-title {
     font-size: 18px;
+    margin-bottom: -25px;
   }
   .popup-form {
     padding: 0;
@@ -405,6 +410,7 @@ input:focus, button:focus {
   .popup-form__header {
     font-size: 24px;
     line-height: 22px;
+    margin: 0;
   }
   .popup-form__header span {
     display: none;
@@ -428,7 +434,8 @@ input:focus, button:focus {
   .popup-form__input {
     width: 200px;
     margin-bottom: 15px;
-    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
     text-align: center;
   }
   .popup-form__btn {
@@ -474,6 +481,7 @@ input:focus, button:focus {
     margin: 0;
   }
   .header-contacts__button img {
+    width: 75%;
     margin: 0;
   }
 
@@ -531,6 +539,7 @@ input:focus, button:focus {
   }
   .popup-title {
     font-size: 20px;
+    margin-bottom: -25px;
   }
   .popup-form {
     padding: 0;
@@ -562,7 +571,8 @@ input:focus, button:focus {
   .popup-form__input {
     width: 200px;
     margin-bottom: 15px;
-    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
     text-align: center;
   }
   .popup-form__btn {
