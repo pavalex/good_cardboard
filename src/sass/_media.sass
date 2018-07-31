@@ -7,6 +7,7 @@
     display: none
   // header
   .header 
+    background-color: $bg-color-light
     &-link 
       &__burger 
         display: block
@@ -30,13 +31,16 @@
       &__button 
         padding: 5px
         margin: 0
+        line-height: 16px
         img 
-          // width: 13px
+          width: 16px
           margin: 0 
   // main 
   .main 
     padding-top: 50px
     padding-bottom: 58px
+    &-form 
+      padding: 20px
     &-text      
       text-align: center
       &__title 
@@ -54,6 +58,8 @@
       &-title 
         font-size: 15px
         line-height: 18px
+        &__btn 
+          padding: 15px 33px
         &__important
           display: inline-block
           margin-top: 14px
@@ -67,10 +73,8 @@
         font-size: 13px
         line-height: 30px
         margin: 0
-        margin-top: 10px
-    .button 
-      &-big 
-        padding: 15px 33px
+        margin-top: 10px   
+      
   // popup 
   .popup 
     width: 250px
@@ -78,10 +82,10 @@
       font-size: 18px
     &-form       
       padding: 0
-      margin-top: 30px
       &__header
         font-size: 24px
         line-height: 22px
+        margin: 0
         span 
           display: none
       &__label 
@@ -94,7 +98,8 @@
       &__input 
         width: 200px
         margin-bottom: 15px
-        padding: 0
+        padding-top: 18px
+        padding-bottom: 18px
         text-align: center
       &__btn
         width: 200px
@@ -129,8 +134,9 @@
       &__button 
         padding: 5px
         margin: 0
+        line-height: 16px
         img 
-          // width: 13px
+          width: 16px
           margin: 0 
   // main 
   .main 
@@ -153,6 +159,8 @@
       &-title 
         font-size: 17px
         line-height: 18px
+        &__btn 
+          padding: 15px 33px
         &__important
           display: inline-block
           margin-top: 14px
@@ -168,9 +176,6 @@
         line-height: 30px
         margin: 0
         margin-top: 10px
-    .button 
-      &-big 
-        padding: 15px 33px
   // popup 
   .popup 
     width: 350px
@@ -178,7 +183,6 @@
       font-size: 20px
     &-form       
       padding: 0
-      margin-top: 30px
       &__header
         font-size: 25px
         line-height: 22px
@@ -194,7 +198,8 @@
       &__input 
         width: 200px
         margin-bottom: 15px
-        padding: 0
+        padding-top: 18px
+        padding-bottom: 18px
         text-align: center
       &__btn
         width: 200px
@@ -215,8 +220,6 @@
       height: 35px
       border-radius: 4px
     &-contacts 
-      &__phones 
-        // flex-direction: column
       &__phone
         font-size: 18px
         margin-right: 13px
@@ -232,12 +235,13 @@
         padding: 7px 20px
         margin: 0
         img 
-          // width: 13px
           margin: 0 
   // main 
   .main 
     padding-top: 50px
     padding-bottom: 58px
+    &-form 
+      padding: 20px
     &-text    
       text-align: center
       &__title 
@@ -268,10 +272,6 @@
         line-height: 30px
         margin: 0
         margin-top: 10px
-    .button 
-      &-big 
-        padding: 0 15px
-        vertical-align: middle
   // popup 
   .popup 
     width: 500px
@@ -279,7 +279,6 @@
       font-size: 24px
     &-form       
       padding: 0
-      margin-top: 30px
       &__header
         font-size: 25px
         line-height: 22px
@@ -290,18 +289,6 @@
       &__enter 
         display: flex 
         justify-content: space-around
-        // flex-direction: column
-        // align-items: center
-        // margin-top: 17px
-      &__input 
-        width: 250px
-        // margin-bottom: 15px
-        // padding: 0
-        // text-align: center
-      &__btn
-        width: 170px
-        height: 56px
-        margin: 0
 
           
 
