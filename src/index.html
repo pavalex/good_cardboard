@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic">
   <link rel="stylesheet" href="css/">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Добрый картон</title>
 </head>
@@ -15,6 +17,50 @@
 <body>
 
   <header class="header">
+    <nav class="menu">
+      <div class="container">
+        <ul class="menu-block">
+          <li class="menu-item">
+            <a href="#" class="menu-item__link">о компании</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#feat" class="menu-item__link">преимущества</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#prod" class="menu-item__link">производство</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#" class="menu-item__link">склад</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#our-products" class="menu-item__link">продукция</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#our-clients" class="menu-item__link">наши клиенты</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#" class="menu-item__link">сертификаты</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#feed" class="menu-item__link">отзывы</a>
+          </li>
+          <!-- /.menu-item -->
+          <li class="menu-item">
+            <a href="#" class="menu-item__link menu-item__link-o">контакты</a>
+          </li>
+          <!-- /.menu-item -->
+        </ul>
+        <!-- /.menu-block -->
+        <div class="menu-close">&times;</div>
+      </div>
+    </nav>
     <div class="container">
       <div class="row align-items-center">
         <div class="col-4 col-md-4">
@@ -57,43 +103,84 @@
   </header>
   <!-- /.header -->
 
-  <section class="main">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-lg-5">
-          <div class="main-img animate hidden-mobile">
-            <img src="img/main/main-img.png" alt="Картон">
-          </div>
-        </div>
-        <!-- /.col-5 -->
-        <div class="col-12 col-lg-7">
-          <div class="main-text">
-            <h1 class="main-text__title">Производство упаковки из гофрокартона</h1>
-            <div class="main-text__subtitle">с доставкой по всей России</div>
-            <div class="main-text__form">
-              <div class="form-title">
-                Получите индивидуальное предложение
-                <br> на производство и поставку гофпродукции
-                <br>
-                <span class="form-title__important">образцы упаковки бесплатно!</span>
-              </div>
-              <form action="#" class="form">
-                <input class="input form-title__input" type="tel" placeholder="Введите номер телефона">
-                <button type="submit" class="button button-lg form-title__btn">Оставить заявку!</button>
-              </form>
-              <small class="form-small">*Минимальный заказ 500шт</small>
+  <div class="main-slider">
+    <section class="main dark-bg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-5">
+            <div class="main-img animate hidden-mobile">
+              <img src="img/main/main-img.png" alt="Картон">
             </div>
-            <!-- /.main-text__form -->
           </div>
-          <!-- /.main-text -->
+          <!-- /.col-5 -->
+          <div class="col-12 col-lg-7">
+            <div class="main-text">
+              <h1 class="main-text__title">Производство упаковки из гофрокартона</h1>
+              <div class="main-text__subtitle">с доставкой по всей России</div>
+              <div class="main-text__form">
+                <div class="form-title">
+                  Получите индивидуальное предложение
+                  <br> на производство и поставку гофпродукции
+                  <br>
+                  <span class="form-title__important">образцы упаковки бесплатно!</span>
+                </div>
+                <form action="#" class="form">
+                  <input class="input form-title__input" type="tel" placeholder="Введите номер телефона">
+                  <button type="submit" class="button button-lg form-title__btn">Оставить заявку!</button>
+                </form>
+                <small class="form-small">*Минимальный заказ 500шт</small>
+              </div>
+              <!-- /.main-text__form -->
+            </div>
+            <!-- /.main-text -->
+          </div>
+          <!-- /.col-7 -->
         </div>
-        <!-- /.col-7 -->
+        <!-- /.row -->
       </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.main -->
+      <!-- /.container -->
+    </section>
+    <!-- /.main -->
+
+    <section class="main main-next dark-bg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-5">
+            <div class="main-img animate hidden-mobile">
+              <img src="img/main/main-img-next.png" alt="Картон">
+            </div>
+          </div>
+          <!-- /.col-5 -->
+          <div class="col-12 col-lg-7">
+            <div class="main-text">
+              <h1 class="main-text__title">Различные упаковки из гофрокартона</h1>
+              <div class="main-text__subtitle">с доставкой по всей России</div>
+              <div class="main-text__form">
+                <div class="form-title">
+                  Получите индивидуальное предложение
+                  <br> на производство и поставку гофпродукции
+                  <br>
+                  <span class="form-title__important">образцы упаковки бесплатно!</span>
+                </div>
+                <form action="#" class="form">
+                  <input class="input form-title__input" type="tel" placeholder="Введите номер телефона">
+                  <button type="submit" class="button button-lg form-title__btn">Оставить заявку!</button>
+                </form>
+                <small class="form-small">*Минимальный заказ 500шт</small>
+              </div>
+              <!-- /.main-text__form -->
+            </div>
+            <!-- /.main-text -->
+          </div>
+          <!-- /.col-7 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.main -->
+  </div>
+  <!-- /.main-slider -->
 
   <!-- Modal -->
   <div class="overlay">
@@ -124,7 +211,7 @@
   </div>
   <!-- /.overlay -->
 
-  <section class="features">
+  <section id="feat" class="features">
     <div class="container">
       <div class="numbers">
 
@@ -142,7 +229,8 @@
 
         <div class="numbers-block">
           <div class="numbers-block__title">
-            до 5 000 000 м<sup>2</sup>
+            до 5 000 000 м
+            <sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -154,7 +242,8 @@
 
         <div class="numbers-block">
           <div class="numbers-block__title">
-            4 000 м<sup>2</sup>
+            4 000 м
+            <sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -291,7 +380,7 @@
   </section>
   <!-- /.features -->
 
-  <section class="products">
+  <section id="our-products" class="products">
     <div class="container">
       <h2 class="section-title wow fadeInUp">Наша продукция</h2>
       <!-- /.section-title -->
@@ -378,7 +467,76 @@
   </section>
   <!-- /.products -->
 
-  <section class="clients">
+  <section class="offer dark-bg">
+    <div class="container">
+      <h2 class="offer-title">Получите индивидуальное предложение
+        <span class="offer-title-small">на производство и поставку изделий</span>
+      </h2>
+      <!-- /.offer-title -->
+      <div class="offer-form">
+        <form class="" action="#">
+          <label class="offer-form-label" for="">Введите ваш номер телефона:</label>
+          <input class="input offer-input" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+          <button class="button offer-button" type="submit">Оставить заявку!</button>
+        </form>
+        <small class="form-small">*Минимальный заказ 500шт</small>
+      </div>
+      <!-- /.offer-form -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.offer -->
+
+  <section id="prod" class="production">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 order-1 col-lg-7 order-lg-0">
+          <div class="production-slider-top">
+            <img src="img/production/photo-1.jpg" alt="photo">
+            <img src="img/production/photo-2.jpg" alt="photo">
+            <img src="img/production/photo-3.jpg" alt="photo">
+            <img src="img/production/photo-4.jpg" alt="photo">
+            <img src="img/production/photo-5.jpg" alt="photo">
+            <img src="img/production/photo-6.jpg" alt="photo">
+            <img src="img/production/photo-7.jpg" alt="photo">
+          </div>
+          <div class="production-slider-bottom">
+            <img src="img/production/photo-1.jpg" alt="photo">
+            <img src="img/production/photo-2.jpg" alt="photo">
+            <img src="img/production/photo-3.jpg" alt="photo">
+            <img src="img/production/photo-4.jpg" alt="photo">
+            <img src="img/production/photo-5.jpg" alt="photo">
+            <img src="img/production/photo-6.jpg" alt="photo">
+            <img src="img/production/photo-7.jpg" alt="photo">
+          </div>
+        </div>
+        <!-- /.col-7 -->
+        <div class="col-12 order-0 col-lg-5 order-lg-1">
+          <div class="production-text">
+            <div class="production-text__title">
+              Производство
+            </div>
+            <!-- /.production-text__title -->
+            <div class="production-text__descr">
+              <p>Современное оборудование позволяет произ- водить до 5 миллионов квадратных метров гофрокартона ежемесячно.
+                Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</p>
+              <p>Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки
+                и производства вашей продукции.</p>
+              <p>Возможно нанесение цветной флексопечати на поверхность коробов.</p>
+            </div>
+            <!-- /.production-text__descr -->
+          </div>
+          <!-- /.production-text -->
+        </div>
+        <!-- /.col-5 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.production -->
+
+  <section id="our-clients" class="clients">
     <div class="container">
       <h2 class="section-title wow fadeInUp">Наши клиенты</h2>
       <!-- /.section-title -->
@@ -498,6 +656,38 @@
   </section>
   <!-- /.clients -->
 
+  <section id="feed" class="feedback">
+    <div class="container">
+      <h2 class="section-title wow fadeInUp">Отзывы о сотрудничестве</h2>
+      <!-- /.section-title -->
+      <div class="feedback-slider">
+        <div class="feedback-slider__item">
+          <img src="img/feedback/feedback-1.png" alt="feedback">
+        </div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item">
+          <img src="img/feedback/feedback-2.png" alt="feedback">
+        </div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item">
+          <img src="img/feedback/feedback-3.png" alt="feedback">
+        </div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item">
+          <img src="img/feedback/feedback-4.png" alt="feedback">
+        </div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item">
+          <img src="img/feedback/feedback-5.png" alt="feedback">
+        </div>
+        <!-- /.feedback-slider__item -->
+      </div>
+      <!-- /.feedback-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.feedback -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
@@ -508,6 +698,8 @@
   <script>
     new WOW().init();
   </script>
+
+  <script src="slick/slick.min.js"></script>
 
   <script src="js/main.js"></script>
 </body>
