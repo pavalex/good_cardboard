@@ -1,26 +1,62 @@
 .button
   font-family: 'Roboto', sans-serif
   font-size: 14px
+  line-height: 20px
   font-weight: 500
+  padding: 12px 18px
   background-color: $active-color
   color: $text-color-light
-  border: none  
-  padding: 13px 22px
+  border: 1px solid transparent  
   border-radius: 5px
+  vertical-align: middle
+  transition: all 0.2s
   &:hover 
     background-color: lighten($active-color, 5)
+    color: $text-color-light
+    text-decoration: none
     cursor: pointer
+  &-lg 
+    padding-top: 18px
+    padding-bottom: 18px
+  &-o 
+    background-color: transparent
+    color: rgba($text-color-dark, 0.5)
+    border: 1px solid $text-color-dark
+    border: 1px solid rgba($text-color-dark, 0.5)
+    transition: all 0.2s
+    &:hover 
+      border: 1px solid transparent  
   img
     vertical-align: middle
-    margin-right: 5px
-  &-big 
-    padding-top: 12px
-    padding-bottom: 12px
-    vertical-align: middle
+    margin-right: 5px  
 
-img 
-  max-width: 100%
+a 
+  display: inline-block
+
+.input 
+  font-family: "Roboto", sans-serif
+  font-size: 14px
+  font-weight: 300
+  line-height: 20px
+  padding: 18px
+  color: #373737
+  border: none
+  border-radius: 5px
+  vertical-align: middle
 
 input, button 
   &:focus
     outline: none
+
+.section-title 
+  font-size: 27px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 29px
+  &::after 
+    content: ''
+    margin-top: 12px
+    display: block
+    height: 6px
+    background: url(../img/products/line.png) center no-repeat
