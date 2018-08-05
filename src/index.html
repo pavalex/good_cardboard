@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Добрый картон</title>
 </head>
@@ -54,12 +56,12 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
-  
+
   <section class="main">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-lg-5">
-          <div class="main-img hidden-mobile">
+          <div class="main-img animate hidden-mobile">
             <img src="img/main/main-img.png" alt="Картон">
           </div>
         </div>
@@ -77,7 +79,7 @@
               </div>
               <form action="#" class="form">
                 <input class="input form-title__input" type="tel" placeholder="Введите номер телефона">
-                <a href="#" class="button button-lg form-title__btn">Оставить заявку!</a>
+                <button type="submit" class="button button-lg form-title__btn">Оставить заявку!</button>
               </form>
               <small class="form-small">*Минимальный заказ 500шт</small>
             </div>
@@ -92,7 +94,7 @@
     <!-- /.container -->
   </section>
   <!-- /.main -->
-  
+
   <!-- Modal -->
   <div class="overlay">
     <div class="popup">
@@ -110,7 +112,7 @@
             </label>
             <div class="popup-form__enter">
               <input type="tel" name="phone" class="input popup-form__input" placeholder="7 (ХХХ) ХХХ-ХХ-ХХ" required>
-              <a href="#" class="button button-lg popup-form__btn">Оставить заявку!</a>
+              <button type="submit" class="button button-lg popup-form__btn">Оставить заявку!</button>
             </div>
             <div class="popup-form__note">*Минимальный заказ 500шт</div>
           </div>
@@ -125,7 +127,7 @@
   <section class="features">
     <div class="container">
       <div class="numbers">
-  
+
         <div class="numbers-block">
           <div class="numbers-block__title">
             5 лет
@@ -137,11 +139,10 @@
           <!-- /.numbers-block__text -->
         </div>
         <!-- /.numbers-block -->
-  
+
         <div class="numbers-block">
           <div class="numbers-block__title">
-            до 5 000 000 м
-            <sup>2</sup>
+            до 5 000 000 м<sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -150,11 +151,10 @@
           <!-- /.numbers-block__text -->
         </div>
         <!-- /.numbers-block -->
-  
+
         <div class="numbers-block">
           <div class="numbers-block__title">
-            4 000 м
-            <sup>2</sup>
+            4 000 м<sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -163,20 +163,20 @@
           <!-- /.numbers-block__text -->
         </div>
         <!-- /.numbers-block -->
-  
+
       </div>
       <!-- /.numbers -->
-  
+
       <div class="features-blocks">
-  
-        <div class="features-block">
+
+        <div class="features-block wow fadeInUp">
           <div class="features-block__img">
             <img src="img/features/icon-1.png" alt="icon-1">
           </div>
           <!-- /.features-block__img -->
           <div class="features-block__text">
             <div class="features-block__title">
-              Производство
+              Собственное производство
             </div>
             <!-- /.features-block__title -->
             <div class="features-block__descr">
@@ -187,8 +187,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-  
-        <div class="features-block">
+
+        <div class="features-block wow fadeInUp" data-wow-delay="0.2s">
           <div class="features-block__img">
             <img src="img/features/icon-2.png" alt="icon-2">
           </div>
@@ -206,8 +206,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-  
-        <div class="features-block">
+
+        <div class="features-block wow fadeInUp" data-wow-delay="0.4s">
           <div class="features-block__img">
             <img src="img/features/icon-3.png" alt="icon-3">
           </div>
@@ -225,8 +225,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-  
-        <div class="features-block">
+
+        <div class="features-block wow fadeInUp" data-wow-delay="0.6s">
           <div class="features-block__img">
             <img src="img/features/icon-4.png" alt="icon-4">
           </div>
@@ -244,8 +244,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-  
-        <div class="features-block">
+
+        <div class="features-block wow fadeInUp" data-wow-delay="0.8s">
           <div class="features-block__img">
             <img src="img/features/icon-5.png" alt="icon-5">
           </div>
@@ -263,8 +263,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-  
-        <div class="features-block">
+
+        <div class="features-block wow fadeInUp" data-wow-delay="1s">
           <div class="features-block__img">
             <img src="img/features/icon-6.png" alt="icon-6">
           </div>
@@ -282,22 +282,22 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-  
+
       </div>
       <!-- /.features-blocks -->
-  
+
     </div>
     <!-- /.container -->
   </section>
   <!-- /.features -->
-  
+
   <section class="products">
     <div class="container">
-      <h2 class="section-title">Наша продукция</h2>
+      <h2 class="section-title wow fadeInUp">Наша продукция</h2>
       <!-- /.section-title -->
       <div class="row">
-  
-        <div class="col-6">
+
+        <div class="col-12 col-md-6">
           <div class="products-block">
             <img class="products-block__img" src="img/products/img-1.png" alt="#">
             <div class="products-block__title">
@@ -313,8 +313,8 @@
           <!-- /.products-block -->
         </div>
         <!-- /.col-6 -->
-  
-        <div class="col-6">
+
+        <div class="col-12 col-md-6">
           <div class="products-block">
             <img class="products-block__img" src="img/products/img-2.png" alt="#">
             <div class="products-block__title">
@@ -330,17 +330,18 @@
           <!-- /.products-block -->
         </div>
         <!-- /.col-6 -->
-  
+
       </div>
       <!-- /.row -->
-  
+
       <div class="row">
-  
-        <div class="col-6">
+
+        <div class="col-12 col-md-6">
           <div class="products-block">
             <img class="products-block__img" src="img/products/img-3.png" alt="#">
             <div class="products-block__title">
-              Гофрокороб самосборный (сложная высечка)
+              Гофрокороб самосборный
+              <span class="products-block__title-none">(сложная высечка)</span>
             </div>
             <!-- /.products-block__title -->
             <div class="products-buttons">
@@ -352,8 +353,8 @@
           <!-- /.products-block -->
         </div>
         <!-- /.col-6 -->
-  
-        <div class="col-6">
+
+        <div class="col-12 col-md-6">
           <div class="products-block">
             <img class="products-block__img" src="img/products/img-4.png" alt="#">
             <div class="products-block__title">
@@ -369,7 +370,7 @@
           <!-- /.products-block -->
         </div>
         <!-- /.col-6 -->
-  
+
       </div>
       <!-- /.row -->
     </div>
@@ -377,11 +378,137 @@
   </section>
   <!-- /.products -->
 
+  <section class="clients">
+    <div class="container">
+      <h2 class="section-title wow fadeInUp">Наши клиенты</h2>
+      <!-- /.section-title -->
+      <div class="row">
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-1.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-2.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-3.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-4.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-5.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-6.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-7.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-8.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-9.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-10.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-11.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-mod col-6 col-md-4 col-lg-3">
+          <div class="clients-block">
+            <a href="#" target="_blank">
+              <img src="img/clients/clients-12.png" alt="clients" class="clients-block__img">
+            </a>
+          </div>
+          <!-- /.clients-block -->
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.clients -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   </script>
   <script src="js/jquery.maskedinput.min.js"></script>
+
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
   <script src="js/main.js"></script>
 </body>
 
