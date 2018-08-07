@@ -18,8 +18,19 @@
     &-item 
       border: none
       text-align: center
+      &::before 
+        content: ''
+        display: block
+        width: 15px
+        height: 1px
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.4)
+        margin: 0 auto
+      &:first-child
+        &::before 
+          border: none
     .menu-item__link 
-      font-size: 18px
+      font-size: 14px
+      line-height: 40px
       padding: 3px 0
     &-block 
       flex-direction: column
@@ -186,10 +197,6 @@
     padding-top: 28px
     padding-bottom: 26px
     &-slider
-      &-top 
-        img 
-          width: 290px
-          height: 390px
       &-bottom 
         display: none    
     &-text 
@@ -252,9 +259,20 @@
     &-item 
       border: none
       text-align: center
-    .menu-item__link 
-      font-size: 18px
-      padding: 3px 0
+      &::before
+        content: ''
+        display: block
+        width: 15px
+        height: 1px
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.4)
+        margin: 0 auto
+      &:first-child
+        &::before 
+          border: none
+      .menu-item__link 
+        font-size: 16px
+        line-height: 40px
+        padding: 3px 0
     &-block 
       flex-direction: column
   // header
@@ -444,8 +462,19 @@
     &-item 
       border: none
       text-align: center
+      &::before
+        content: ''
+        display: block
+        width: 15px
+        height: 1px
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.4)
+        margin: 0 auto
+      &:first-child
+        &::before 
+          border: none
     .menu-item__link 
-      font-size: 18px
+      font-size: 16px
+      line-height: 40px
       padding: 3px 0
     &-block 
       flex-direction: column

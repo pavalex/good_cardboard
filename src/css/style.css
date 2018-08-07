@@ -530,6 +530,8 @@ input:focus, button:focus {
 .production-slider-bottom img {
   margin: 0 3px;
   outline: none;
+  height: auto;
+  cursor: pointer;
 }
 .production-text__title {
   position: relative;
@@ -538,7 +540,7 @@ input:focus, button:focus {
   margin-left: -32px;
   margin-top: 18px;
   margin-bottom: 25px;
-  padding: 20px 37px;
+  padding: 20px 30px;
   background-color: #ff9d00;
   color: #fff;
   font-size: 28px;
@@ -575,6 +577,11 @@ input:focus, button:focus {
 }
 .slider-arrow__left:hover {
   background: #ff9d00 url(../img/production/arrow-left-active.png) no-repeat center;
+}
+
+.slick-slide {
+  height: auto;
+  min-height: 1px;
 }
 
 .clients {
@@ -641,6 +648,7 @@ input:focus, button:focus {
 
 @-webkit-keyframes movie {
   from {
+    display: none;
     opacity: 0;
     margin-bottom: -400px;
     -webkit-transform: rotate(90deg);
@@ -663,6 +671,7 @@ input:focus, button:focus {
 
 @keyframes movie {
   from {
+    display: none;
     opacity: 0;
     margin-bottom: -400px;
     -webkit-transform: rotate(90deg);
@@ -689,6 +698,8 @@ input:focus, button:focus {
           animation-duration: 1s;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 @media (min-width: 1200px) {
@@ -716,8 +727,20 @@ input:focus, button:focus {
     border: none;
     text-align: center;
   }
+  .menu-item::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 1px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+  }
+  .menu-item:first-child::before {
+    border: none;
+  }
   .menu .menu-item__link {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 40px;
     padding: 3px 0;
   }
   .menu-block {
@@ -946,10 +969,6 @@ input:focus, button:focus {
     padding-top: 28px;
     padding-bottom: 26px;
   }
-  .production-slider-top img {
-    width: 290px;
-    height: 390px;
-  }
   .production-slider-bottom {
     display: none;
   }
@@ -1026,8 +1045,20 @@ input:focus, button:focus {
     border: none;
     text-align: center;
   }
-  .menu .menu-item__link {
-    font-size: 18px;
+  .menu-item::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 1px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+  }
+  .menu-item:first-child::before {
+    border: none;
+  }
+  .menu-item .menu-item__link {
+    font-size: 16px;
+    line-height: 40px;
     padding: 3px 0;
   }
   .menu-block {
@@ -1288,8 +1319,20 @@ input:focus, button:focus {
     border: none;
     text-align: center;
   }
+  .menu-item::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 1px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+  }
+  .menu-item:first-child::before {
+    border: none;
+  }
   .menu .menu-item__link {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 40px;
     padding: 3px 0;
   }
   .menu-block {
