@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <title>Добрый картон</title>
 </head>
 
@@ -53,7 +54,7 @@
           </li>
           <!-- /.menu-item -->
           <li class="menu-item">
-            <a href="#" class="menu-item__link menu-item__link-o">контакты</a>
+            <a href="#cont" class="menu-item__link menu-item__link-o">контакты</a>
           </li>
           <!-- /.menu-item -->
         </ul>
@@ -229,7 +230,8 @@
 
         <div class="numbers-block">
           <div class="numbers-block__title">
-            до 5 000 000 м<sup>2</sup>
+            до 5 000 000 м
+            <sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -241,7 +243,8 @@
 
         <div class="numbers-block">
           <div class="numbers-block__title">
-            4 000 м<sup>2</sup>
+            4 000 м
+            <sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -393,7 +396,7 @@
             <!-- /.products-block__title -->
             <div class="products-buttons">
               <a href="#" class="button button-o products-block__button">Подробнее</a>
-              <a href="#" class="button">Получить расчет</a>
+              <a href="#our-products" class="button btn-send">Получить расчет</a>
             </div>
             <!-- /.products-buttons -->
           </div>
@@ -410,7 +413,7 @@
             <!-- /.products-block__title -->
             <div class="products-buttons">
               <a href="#" class="button button-o products-block__button">Подробнее</a>
-              <a href="#" class="button">Получить расчет</a>
+              <a href="#our-products" class="button btn-send">Получить расчет</a>
             </div>
             <!-- /.products-buttons -->
           </div>
@@ -433,7 +436,7 @@
             <!-- /.products-block__title -->
             <div class="products-buttons">
               <a href="#" class="button button-o products-block__button">Подробнее</a>
-              <a href="#" class="button">Получить расчет</a>
+              <a href="#our-products" class="button btn-send">Получить расчет</a>
             </div>
             <!-- /.products-buttons -->
           </div>
@@ -450,7 +453,7 @@
             <!-- /.products-block__title -->
             <div class="products-buttons">
               <a href="#" class="button button-o products-block__button">Подробнее</a>
-              <a href="#" class="button">Получить расчет</a>
+              <a href="#our-products" class="button btn-send">Получить расчет</a>
             </div>
             <!-- /.products-buttons -->
           </div>
@@ -686,6 +689,75 @@
   </section>
   <!-- /.feedback -->
 
+  <section id="cont" class="contacts">
+
+    <div class="contacts-mobile">
+      <h3 class="contacts-mobile__title">контакты</h3>
+      <div class="contacts-mobile__office">
+        <p class="contacts-mobile__subtitle">Адрес офиса</p>
+        <p class="contacts-mobile__text ">г. Уфа, Проспект октября, 46</p>
+      </div>
+      <div class="contacts-mobile__address">
+        <p class="contacts-mobile__subtitle">Адрес склада</p>
+        <p class="contacts-mobile__text">г. Уфа, ул. Майкопская, 65/2</p>
+      </div>
+      <div class="contacts-mobile__phone">
+        <div class="contacts-mobile__sale">
+          <p class="contacts-mobile__subtitle">Тел. отдела продаж:</p>
+          <a class="contacts-mobile__tel" href="tel:83472715428">8 (374) 271-54-28</a>
+          <br>
+          <a class="contacts-mobile__tel" href="tel:83633000">8 (937) 363-30-00</a>
+        </div>
+      </div>
+      <a href="#map" class="button contacts-block__btn">Заказать звонок</a>
+      <div class="contacts-mobile__mail">
+        <p class="contacts-mobile__subtitle">E-mail</p>
+        <a class="contacts-mobile__email" href="mailto:rals.karton@gmail.com">urals.karton@gmail.com</a>
+      </div>
+    </div>
+    <!-- /.ccontacts-mobile -->
+
+    <div id="map" class=map></div>
+    <div class="contacts-block">
+      <div class="contacts-block__address">
+        <div class="contacts-block__office">
+          <p class="contacts-block__title">Адрес офиса</p>
+          <p class="contacts-block__text ">г. Уфа, Проспект октября, 46</p>
+        </div>
+        <p class="contacts-block__title">Адрес склада</p>
+        <p class="contacts-block__text">г. Уфа, ул. Майкопская, 65/2</p>
+      </div>
+      <!-- /.contacts-block__address -->
+      <div class="contacts-block__phone">
+        <div class="contacts-block__sale">
+          <p class="contacts-block__title">Тел. отдела продаж:</p>
+          <a class="contacts-block__tel" href="tel:83472715428">8 (374) 271-54-28</a>
+          <br>
+          <a class="contacts-block__tel" href="tel:83633000">8 (937) 363-30-00</a>
+        </div>
+      </div>
+      <!-- /.contacts-block__phone -->
+      <div class="contacts-block__cta">
+        <a href="#map" class="button contacts-block__btn">Заказать звонок</a>
+      </div>
+      <!-- /.contacts-block__cta -->
+      <div class="contacts-block__mail">
+        <p class="contacts-block__title">E-mail</p>
+        <a class="contacts-block__email" href="mailto:urals.karton@gmail.com">urals.karton@gmail.com</a>
+      </div>
+      <!-- /.contacts-block__mail -->
+    </div>
+    <!-- /.contacts-block -->
+  </section>
+  <!-- /.contacts -->
+
+  <footer class="footer">
+    <div class="copyright">
+      &copy;
+      <a class="copyright-mail" href="mailto:www.gofra-ural.ru">www.gofra-ural.ru</a> 2016, все права защищены
+    </div>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
@@ -700,6 +772,44 @@
   <script src="slick/slick.min.js"></script>
 
   <script src="js/main.js"></script>
+  <script>
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+          center: [54.752656, 56.002053],
+          zoom: 16,
+          scroll: false
+        }, {
+          searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Здесь находится офис',
+          balloonContent: 'Это наш офис'
+        }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/map/maps.png',
+          // Размеры метки.
+          iconImageSize: [64, 64],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-32, -64]
+        });
+
+
+      myMap.geoObjects
+        .add(myPlacemark);
+
+      myMap.behaviors.disable('scrollZoom');
+    });
+  </script>
 </body>
 
 </html>
