@@ -1,0 +1,32 @@
+.feedback 
+  padding-top: 55px
+  padding-bottom: 66px
+  background-color: $bg-color-light
+  &-slider    
+    &__item 
+      background-color: $text-color-light
+      border: 1px solid rgba(0, 0, 0, 0.1)
+      border-radius: 4px
+      margin-right: 14px
+      margin-left: 14px
+      outline: none
+      img 
+        width: 100%
+        margin: 0 auto
+.slider
+  &-arrow
+    &-feedback 
+      position: absolute
+      top: 50%
+      margin-top: -24px
+      width: 10px
+      height: 47px
+      cursor: pointer
+      z-index: 99
+      &__right 
+        right: -19px
+        background: url(../img/feedback/arrow-feedback__right.png) no-repeat center
+      &__left 
+        left: -19px
+        background: url(../img/feedback/arrow-feedback__left.png) no-repeat center
+   

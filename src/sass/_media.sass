@@ -5,9 +5,39 @@
 @media (max-width: 575.98px)
   .hidden-mobile 
     display: none
+  // menu
+  .menu 
+    display: none
+    &-close 
+      display: block
+      color: $text-color-light
+      font-size: 45px
+      position: absolute
+      top: -7px
+      cursor: pointer
+    &-item 
+      border: none
+      text-align: center
+      &::before 
+        content: ''
+        display: block
+        width: 15px
+        height: 1px
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.4)
+        margin: 0 auto
+      &:first-child
+        &::before 
+          border: none
+    .menu-item__link 
+      font-size: 14px
+      line-height: 40px
+      padding: 3px 0
+    &-block 
+      flex-direction: column
   // header
   .header 
     background-color: $bg-color-light
+    padding: 15px 0
     &-link 
       &__burger 
         display: block
@@ -142,6 +172,62 @@
       margin-bottom: 10px
       &::after 
         display: none
+  // offer
+  .offer 
+    padding-top: 50px
+    padding-bottom: 58px
+    &-title 
+      font-size: 20px
+      font-weight: 700
+      &-small 
+        font-size: 16px
+        font-weight: 400
+        margin-bottom: 30px
+    &-form 
+      &-label 
+        font-size: 14px
+        font-weight: 300
+        margin-bottom: 22px
+    &-input 
+      padding: 14px 59px
+    &-button 
+      padding: 15px 31px
+  // production 
+  .production 
+    padding-top: 28px
+    padding-bottom: 26px
+    &-slider
+      &-bottom 
+        display: none    
+    &-text 
+      &__title 
+        margin: 0
+        margin-left: -15px
+        margin-right: -15px
+        padding: 16px 0
+        text-align: center
+        margin-bottom: 17px
+      &__descr 
+        font-size: 14px
+        font-weight: 300
+        line-height: 18px
+  .slider
+    &-arrow 
+      &__mobile 
+        position: absolute
+        top: 50%
+        margin-top: -39px
+        width: 22px
+        height: 79px
+        background-color: $active-color
+        z-index: 99
+        cursor: pointer 
+      &__right-mobile 
+        right: 0
+        background: #ff9d00 url(../img/production/arrow-right-active.png) no-repeat center 
+      &__left-mobile 
+        left: 0
+        background: #ff9d00 url(../img/production/arrow-left-active.png) no-repeat center
   // clients
   .clients 
     padding-top: 28px
@@ -160,8 +246,38 @@
 @media (min-width: 576px) and (max-width: 767.98px)
   .hidden-mobile 
     display: none
+  // menu
+  .menu 
+    display: none
+    &-close 
+      display: block
+      color: $text-color-light
+      font-size: 45px
+      position: absolute
+      top: -7px
+      cursor: pointer
+    &-item 
+      border: none
+      text-align: center
+      &::before
+        content: ''
+        display: block
+        width: 15px
+        height: 1px
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.4)
+        margin: 0 auto
+      &:first-child
+        &::before 
+          border: none
+      .menu-item__link 
+        font-size: 16px
+        line-height: 40px
+        padding: 3px 0
+    &-block 
+      flex-direction: column
   // header
   .header 
+    padding: 15px 0
     &-link 
       &__burger 
         display: block
@@ -295,12 +411,76 @@
       margin-bottom: 10px
       &::after 
         display: none
+  // offer
+  .offer 
+    padding-top: 50px
+    padding-bottom: 58px
+    &-title 
+      font-size: 22px
+      font-weight: 700
+      &-small 
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 30px
+    &-form 
+      &-label 
+        font-size: 16px
+        font-weight: 300
+        margin-bottom: 22px
+    &-input 
+      padding: 16px 65px
+    &-button 
+      padding: 15px 31px
+  // production 
+  .production
+    padding-top: 35px
+    padding-bottom: 35px      
+    &-text 
+      &__title 
+        margin: 0 auto        
+        padding: 16px 0
+        text-align: center
+        margin-bottom: 17px
+      &__descr 
+        font-size: 16px
+        font-weight: 300
+        line-height: 18px
 
 @media (min-width: 768px) and (max-width: 991.98px)
   .hidden-mobile 
     display: none
+  // menu
+  .menu 
+    display: none
+    &-close 
+      display: block
+      color: $text-color-light
+      font-size: 45px
+      position: absolute
+      top: -7px
+      cursor: pointer
+    &-item 
+      border: none
+      text-align: center
+      &::before
+        content: ''
+        display: block
+        width: 15px
+        height: 1px
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.4)
+        margin: 0 auto
+      &:first-child
+        &::before 
+          border: none
+    .menu-item__link 
+      font-size: 16px
+      line-height: 40px
+      padding: 3px 0
+    &-block 
+      flex-direction: column
   // header
   .header 
+    padding: 15px 0
     &-link 
       &__burger 
         display: block
@@ -420,6 +600,40 @@
       margin-bottom: 18px
       &::after 
         display: none
+  // offer
+  .offer 
+    padding-top: 50px
+    padding-bottom: 58px
+    &-title 
+      font-size: 24px
+      font-weight: 700
+      &-small 
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 30px
+    &-form 
+      &-label 
+        font-size: 18px
+        font-weight: 300
+        margin-bottom: 22px
+    &-input 
+      padding: 16px 65px
+    &-button 
+      padding: 15px 31px
+  // production 
+  .production
+    padding-top: 40px
+    padding-bottom: 40px      
+    &-text 
+      &__title 
+        margin: 0 auto        
+        padding: 18px 0
+        text-align: center
+        margin-bottom: 17px
+      &__descr 
+        font-size: 16px
+        font-weight: 300
+        line-height: 18px
 
           
 
