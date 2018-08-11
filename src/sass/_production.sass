@@ -7,11 +7,14 @@
     &-bottom 
       padding-left: 26px
       padding-right: 26px
-      img 
-        margin: 0 3px
+      &__img 
+        position: relative
         outline: none
-        height: auto
         cursor: pointer
+        img 
+          width: 113px
+          height: 78px
+          margin: 0 3px
   &-text 
     &__title 
       position: relative
@@ -53,3 +56,16 @@
 .slick-slide 
   height: auto
   min-height: 1px
+.production .slick-active::before 
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 4
+  display: block
+  width: 113px
+  height: 78px
+  margin-left: 5px
+  background: rgba(0, 0, 0, 0.5)
+.production .slick-current::before 
+  display: none

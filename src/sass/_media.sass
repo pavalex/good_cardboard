@@ -446,7 +446,14 @@
   // production 
   .production
     padding-top: 35px
-    padding-bottom: 35px      
+    padding-bottom: 35px
+    &-slider
+      &-bottom 
+        &__img 
+          img 
+            width: 110px
+            height: 78px
+            margin: 0 3px    
     &-text 
       &__title 
         margin: 0 auto        
@@ -457,6 +464,9 @@
         font-size: 16px
         font-weight: 300
         line-height: 18px
+  .production .slick-active::before 
+    width: 110px
+    margin-left: 3px
   // contacts
   .contacts 
     padding-top: 36px
@@ -647,7 +657,14 @@
   // production 
   .production
     padding-top: 40px
-    padding-bottom: 40px      
+    padding-bottom: 40px   
+    &-slider
+      &-bottom 
+        &__img 
+          img 
+            width: 125px
+            height: 78px
+            margin: 0 18px     
     &-text 
       &__title 
         margin: 0 auto        
@@ -658,6 +675,9 @@
         font-size: 16px
         font-weight: 300
         line-height: 18px
+  .production .slick-active::before 
+    width: 125px
+    margin-left: 18px
   // contacts
   .contacts 
     padding-top: 36px
