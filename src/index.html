@@ -470,7 +470,7 @@
       <div class="offer-form">
         <form class="" action="#">
           <label class="offer-form-label" for="offer-label">Введите ваш номер телефона:</label>
-          <input id="offer-label" class="input offer-input" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+          <input id="offer-label" class="input offer-input" type="tel" required placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
           <button class="button offer-button" type="submit">Оставить заявку!</button>
         </form>
         <small class="form-small">*Минимальный заказ 500шт</small>
@@ -723,8 +723,7 @@
       </div>
     </div>
     <!-- /.ccontacts-mobile -->
-
-    <div id="map" class=map></div>
+   
     <div class="container">
       <div class="contacts-block">
         <div class="contacts-block__address">
@@ -757,6 +756,7 @@
       </div>
       <!-- /.contacts-block -->
     </div>
+    <div id="map" class=map></div>
   </section>
   <!-- /.contacts -->
 
@@ -786,7 +786,8 @@
       var myMap = new ymaps.Map('map', {
         center: [54.752656, 56.002053],
         zoom: 16,
-        scroll: false
+        scroll: false,
+        controls: ['zoomControl', 'fullscreenControl']
       }, {
           searchControlProvider: 'yandex#search'
         }),
