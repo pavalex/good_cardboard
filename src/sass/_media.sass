@@ -42,10 +42,9 @@
       &__burger 
         display: block
     &-logo 
-      background: $active-color url(../img/header/header-logo-mobile.png) center no-repeat      
-      width: 36px
-      height: 35px
-      border-radius: 4px
+      display: none
+      &-mobile 
+        display: block
     &-contacts 
       &__phones 
         flex-direction: column
@@ -183,6 +182,7 @@
         font-size: 16px
         font-weight: 400
         margin-bottom: 30px
+        margin-top: 7px
     &-form 
       &-label 
         font-size: 14px
@@ -198,7 +198,11 @@
     padding-bottom: 26px
     &-slider
       &-bottom 
-        display: none    
+        display: none   
+      &-top-img 
+        position: relative
+        height: 380px
+        width: 100% 
     &-text 
       &__title 
         margin: 0
@@ -249,9 +253,52 @@
     padding-left: 15px
     padding-right: 15px
     &-block 
-      display: none
+      position: static
+      padding: 0
+      text-align: center   
+      padding-bottom: 28px 
+      &__title
+        margin: 0
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 5px
+        .contacts-block__title
+          margin: 0
+      &__text 
+        margin: 0
+        font-size: 14px
+        font-weight: 300
+      &__address 
+        margin-bottom: 30px
+      &__phone 
+        margin-bottom: 10px
+        .contacts-block__tel
+          font-size: 14px
+      &__office
+        margin-bottom: 14px
+        &::before 
+          display: none
+      &__sale 
+        &::before 
+          display: none
+      &__cta 
+        margin-bottom: 17px
+      &__btn 
+        padding: 12px 23px
+      &__mail 
+        &::before 
+          display: none
+        .contacts-block__email
+          font-size: 14px
     &-mobile 
-      display: block
+      &__title 
+        display: block
+        color: #313131
+        font-size: 22px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 0
+        margin-bottom: 15px      
   .copyright 
     font-size: 11px
   .map 
@@ -293,14 +340,13 @@
   // header
   .header 
     padding: 15px 0
+    &-logo
+      display: none
+      &-mobile 
+        display: block
     &-link 
       &__burger 
         display: block
-    &-logo 
-      background: $active-color url(../img/header/header-logo-mobile.png) center no-repeat      
-      width: 36px
-      height: 35px
-      border-radius: 4px
     &-contacts 
       &__phones 
         flex-direction: column
@@ -477,9 +523,50 @@
     padding-left: 15px
     padding-right: 15px
     &-block 
-      display: none
+      position: static
+      padding: 0
+      text-align: center   
+      padding-bottom: 28px 
+      &__title
+        margin: 0
+        font-size: 20px
+        font-weight: 500
+        margin-bottom: 5px
+      &__text 
+        margin: 0
+        font-size: 16px
+        font-weight: 300
+      &__address 
+        margin-bottom: 30px
+      &__phone 
+        margin-bottom: 14px
+        .contacts-block__tel
+          font-size: 16px
+      &__office
+        margin-bottom: 16px
+        &::before 
+          display: none
+      &__sale 
+        &::before 
+          display: none
+      &__cta 
+        margin-bottom: 25px
+      &__btn 
+        padding: 12px 23px
+      &__mail 
+        &::before 
+          display: none
+        .contacts-block__email
+          font-size: 16px
     &-mobile 
-      display: block
+      &__title 
+        display: block
+        color: #313131
+        font-size: 22px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 0
+        margin-bottom: 15px
   .copyright 
     font-size: 12px  
 
@@ -518,14 +605,13 @@
   // header
   .header 
     padding: 15px 0
+    &-logo 
+      display: none
+      &-mobile 
+        display: block
     &-link 
       &__burger 
         display: block
-    &-logo 
-      background: $active-color url(../img/header/header-logo-mobile.png) center no-repeat      
-      width: 36px
-      height: 35px
-      border-radius: 4px
     &-contacts 
       &__phone
         font-size: 18px
@@ -662,6 +748,14 @@
     padding-top: 40px
     padding-bottom: 40px   
     &-slider
+      &-top
+        &-img 
+          position: relative
+          height: 486px
+          width: 100%
+          img 
+            position: absolute
+            height: 100%
       &-bottom 
         &__img 
           img 
@@ -688,9 +782,50 @@
     padding-left: 15px
     padding-right: 15px
     &-block 
-      display: none
+      position: static
+      padding: 0
+      text-align: center   
+      padding-bottom: 28px 
+      &__title
+        margin: 0
+        font-size: 20px
+        font-weight: 500
+        margin-bottom: 5px
+      &__text 
+        margin: 0
+        font-size: 16px
+        font-weight: 300
+      &__address 
+        margin-bottom: 30px
+      &__phone 
+        margin-bottom: 14px
+        .contacts-block__tel
+          font-size: 16px
+      &__office
+        margin-bottom: 16px
+        &::before 
+          display: none
+      &__sale 
+        &::before 
+          display: none
+      &__cta 
+        margin-bottom: 25px
+      &__btn 
+        padding: 12px 23px
+      &__mail 
+        &::before 
+          display: none
+        .contacts-block__email
+          font-size: 16px
     &-mobile 
-      display: block
+      &__title 
+        display: block
+        color: #313131
+        font-size: 22px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 0
+        margin-bottom: 15px
 
           
 

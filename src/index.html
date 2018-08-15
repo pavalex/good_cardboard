@@ -4,14 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#ff9d00">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ff9d00">
+  <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <title>Добрый картон</title>
 </head>
@@ -78,8 +85,8 @@
               <span class="header-link__burger"></span>
             </a>
             <a href="/">
-              <div class="header-logo">
-              </div>
+              <img class="header-logo" src="img/header/header-logo.png" alt="logo">
+              <img class="header-logo-mobile" src="img/header/header-logo-mobile.png" alt="logo">
             </a>
           </div>
         </div>
@@ -98,7 +105,7 @@
                 </a>
               </div>
             </div>
-            <a href="#" class="header-contacts__button button">
+            <a href="#" onclick="yaCounter49916503.reachGoal('CALL_BTN'); return true;" class="header-contacts__button button">
               <img src="img/header/icon-phone.png" alt="Телефон">
               <span class="hidden-mobile">Заказать звонок</span>
             </a>
@@ -155,7 +162,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-5">
-            <div class="main-img animate hidden-mobile">
+            <div class="main-img main-img-next animate hidden-mobile">
               <img src="img/main/main-img-next.png" alt="Картон">
             </div>
           </div>
@@ -208,7 +215,7 @@
             </label>
             <div class="popup-form__enter">
               <input id="popup-phone" type="tel" name="phone" class="input popup-form__input" required placeholder="7 (ХХХ) ХХХ-ХХ-ХХ">
-              <button type="submit" class="button button-lg popup-form__btn">Оставить заявку!</button>
+              <button onclick="yaCounter49916503.reachGoal('SEND_FORM'); return true;" type="submit" class="button button-lg popup-form__btn">Оставить заявку!</button>
             </div>
             <div class="popup-form__note">*Минимальный заказ 500шт</div>
           </div>
@@ -236,7 +243,8 @@
         <!-- /.numbers-block -->
         <div class="numbers-block">
           <div class="numbers-block__title">
-            до 5 000 000 м<sup>2</sup>
+            до 5 000 000 м
+            <sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -247,7 +255,8 @@
         <!-- /.numbers-block -->
         <div class="numbers-block">
           <div class="numbers-block__title">
-            4 000 м<sup>2</sup>
+            4 000 м
+            <sup>2</sup>
           </div>
           <!-- /.numbers-block__title -->
           <div class="numbers-block__text">
@@ -486,13 +495,27 @@
       <div class="row">
         <div class="col-12 order-1 col-lg-7 order-lg-0">
           <div class="production-slider-top">
-            <img src="img/production/photo-1.jpg" alt="photo">
-            <img src="img/production/photo-2.jpg" alt="photo">
-            <img src="img/production/photo-3.jpg" alt="photo">
-            <img src="img/production/photo-4.jpg" alt="photo">
-            <img src="img/production/photo-5.jpg" alt="photo">
-            <img src="img/production/photo-6.jpg" alt="photo">
-            <img src="img/production/photo-7.jpg" alt="photo">
+            <div class="production-slider-top-img">
+              <img src="img/production/photo-1.jpg" alt="photo">
+            </div>
+            <div class="production-slider-top-img">
+              <img src="img/production/photo-2.jpg" alt="photo">
+            </div>
+            <div class="production-slider-top-img">
+              <img src="img/production/photo-3.jpg" alt="photo">
+            </div>
+            <div class="production-slider-top-img">
+              <img src="img/production/photo-4.jpg" alt="photo">
+            </div>
+            <div class="production-slider-top-img">
+              <img src="img/production/photo-5.jpg" alt="photo">
+            </div>
+            <div class="production-slider-top-img">
+              <img src="img/production/photo-6.jpg" alt="photo">
+            </div>
+            <div class="production-slider-top-img">
+              <img src="img/production/photo-7.jpg" alt="photo">
+            </div>
           </div>
           <div class="production-slider-bottom">
             <div class="production-slider-bottom__img">
@@ -698,34 +721,9 @@
 
   <section id="cont" class="contacts">
 
-    <div class="contacts-mobile">
-      <h3 class="contacts-mobile__title">контакты</h3>
-      <div class="contacts-mobile__office">
-        <p class="contacts-mobile__subtitle">Адрес офиса</p>
-        <p class="contacts-mobile__text ">г. Уфа, Проспект октября, 46</p>
-      </div>
-      <div class="contacts-mobile__address">
-        <p class="contacts-mobile__subtitle">Адрес склада</p>
-        <p class="contacts-mobile__text">г. Уфа, ул. Майкопская, 65/2</p>
-      </div>
-      <div class="contacts-mobile__phone">
-        <div class="contacts-mobile__sale">
-          <p class="contacts-mobile__subtitle">Тел. отдела продаж:</p>
-          <a class="contacts-mobile__tel" href="tel:83472715428">8 (374) 271-54-28</a>
-          <br>
-          <a class="contacts-mobile__tel" href="tel:83633000">8 (937) 363-30-00</a>
-        </div>
-      </div>
-      <a href="#map" class="button contacts-block__btn">Заказать звонок</a>
-      <div class="contacts-mobile__mail">
-        <p class="contacts-mobile__subtitle">E-mail</p>
-        <a class="contacts-mobile__email" href="mailto:rals.karton@gmail.com">urals.karton@gmail.com</a>
-      </div>
-    </div>
-    <!-- /.ccontacts-mobile -->
-   
     <div class="container">
       <div class="contacts-block">
+        <h3 class="contacts-mobile__title">контакты</h3>
         <div class="contacts-block__address">
           <div class="contacts-block__office">
             <p class="contacts-block__title">Адрес офиса</p>
@@ -772,54 +770,9 @@
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   </script>
   <script src="js/jquery.maskedinput.min.js"></script>
-
   <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-
   <script src="slick/slick.min.js"></script>
-
   <script src="js/main.js"></script>
-  <script>
-    ymaps.ready(function () {
-      var myMap = new ymaps.Map('map', {
-        center: [54.752656, 56.002053],
-        zoom: 16,
-        scroll: false,
-        controls: ['zoomControl', 'fullscreenControl']
-      }, {
-          searchControlProvider: 'yandex#search'
-        }),
-
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Здесь находится офис',
-          balloonContent: 'Это наш офис'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/map/maps.png',
-            // Размеры метки.
-            iconImageSize: [64, 64],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-32, -64]
-          });
-
-
-      myMap.geoObjects
-        .add(myPlacemark);
-
-      myMap.behaviors.disable('scrollZoom');
-    });
-  </script>
 </body>
 
 </html>
